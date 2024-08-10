@@ -30,15 +30,20 @@ Content-Type: application/json
 
 ## Prerequisites
 
-- Python 3.7 or higher
+- Tested on Python 3.11
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Uvicorn](https://www.uvicorn.org/) (ASGI server)
-- [httpx](https://www.python-httpx.org/) (HTTP client for asynchronous requests)
-- [pydantic](https://pydantic-docs.helpmanual.io/) (Data validation and settings management)
+- [aiohttp](https://docs.aiohttp.org/en/stable/) (Asynchronous HTTP client)
 
-## Installation
+## Example Use:
 
-1. **Clone the Repository:**
+```
+pip install -r requirements.txt
 
-   ```bash
-   git clone https://github.com/sockheadrps/TwitchFollowersServer.git
+uvicorn main:app
+```
+
+To test you can visit
+```
+http://127.0.0.1:8000/docs#/default/get_twitch_followers_followers_post
+```
